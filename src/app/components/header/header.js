@@ -51,7 +51,7 @@ function Header(props) {
                             <Link className="header-signup" to={{ pathname: "signUp" }}><a>Clasificación</a></Link>
                         </li>
                         <li>
-                            <Link className="header-signup" to={{ pathname: "signUp" }}><a>Estadisticas</a></Link>
+                            <Link className="header-signup" to={{ pathname: "statistic" }}><a>Estadisticas</a></Link>
                         </li>
                         <li>
                             <Link className="header-signup" to={{ pathname: "signUp" }}><a>Historico</a></Link>
