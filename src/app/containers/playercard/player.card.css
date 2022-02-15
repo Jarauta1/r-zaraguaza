@@ -1,0 +1,62 @@
+.payer-card {
+    margin: 5% 2%;
+}
+
+.photo {
+    position: relative;
+    width: 259px;
+}
+
+/* Contenedor de la imagen */
+.photo-player {
+    height: 400px;
+    filter: blur(5px);
+    transition: all 1.5s ease;
+    width: 100%;
+}
+
+/* Banner de la imagen */
+.photo-shirt {
+    height: 400px;
+    transition: all 1.5s ease;
+    position: absolute;
+    top: 0px;
+    display: flex;
+}
+
+/* Cuando se haga hover sobre el contenedor */
+.photo:hover > .photo-player {
+    filter: blur(0);
+}
+
+.photo:hover > .photo-shirt {
+    opacity: 0;
+}
+
+.card-footer {
+    display: flex;
+    height: 65px;
+    width: 259px;
+    background-color: whitesmoke;
+    align-items: center;
+}
+
+.div-dorsal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    width: 55px;
+    background-color: rgb(197, 197, 197);
+}
+
+.card-dorsal {
+    color: rgb(0, 0, 184);
+    font-size:xx-large;
+}
+
+.card-name {
+    color: rgb(78, 78, 255);
+    font-size: x-large;
+    padding-left: 5%;
+}
