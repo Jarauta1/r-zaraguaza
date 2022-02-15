@@ -42,13 +42,13 @@ function Header(props) {
                     </label>
                     <ul className="menu-header">
                         <li>
-                            <Link className="header-login" to={{ pathname: "/logIn" }}><a>Plantilla</a></Link>
+                            <Link className="header-login" to={{ pathname: "/players" }}><a>Plantilla</a></Link>
                         </li>
                         <li>
                             <Link className="header-signup" to={{ pathname: "signUp" }}><a>Resultados</a></Link>
                         </li>
                         <li>
-                            <Link className="header-signup" to={{ pathname: "signUp" }}><a>Clasificación</a></Link>
+                            <Link className="header-signup" to={{ pathname: "classification" }}><a>Clasificación</a></Link>
                         </li>
                         <li>
                             <Link className="header-signup" to={{ pathname: "signUp" }}><a>Estadisticas</a></Link>
