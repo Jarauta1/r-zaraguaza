@@ -6,4 +6,7 @@ export class CONSTANTS {
     static CREATE_JUGADOR = '/jugador/create';
     static UPDATE_JUGADOR = '/jugador/update/:id';
     static DELETE_JUGADOR = '/jugador/delete/:id';
+
+    //EQUIPOS
+    static GET_TEAMS = '/equipo/get-all';
 }

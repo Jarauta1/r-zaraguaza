@@ -1,0 +1,181 @@
+/* Helper Class */
+.league-table .hide-small {
+  display: none;
+}
+
+/* Media Query - Can be swapped out for a bootstrap one */
+@media (min-width: 600px) {
+  .league-table .hide-small {
+    display: table-cell;
+  }
+}
+
+h1{
+  text-align: center;
+}
+
+#content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding-top: 50px;
+}
+
+#teams {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  border-radius: 6px;
+  width: 962px;
+}
+
+@media screen and (max-width: 500px){
+  #content{
+      width: 100%;
+  }
+
+  #teams {
+      width: 100%;
+  }
+}
+
+#clteam{
+  background-color: #80aa3b;
+  color: white;
+}
+
+#clplayoff{
+  background-color: #5f891a;
+  color: white;
+}
+
+#elteams{
+  background-color: #bd910a;
+  color: white;
+}
+
+#middleteams{
+  background-color: #eeeeee;
+  color: black;
+}
+
+#downteams{
+  background-color: #a6322e;
+  color: white;
+}
+
+#teams td, #teams th {
+  padding: 8px;
+}
+
+#teams td{
+  text-align: center;
+}
+
+.borederleft{
+  border-top-left-radius: 6px;
+}
+
+.borderright{
+  border-top-right-radius: 6px;
+}
+
+.borderbottomleft{
+  border-bottom-left-radius: 6px;
+  background-color: #a6322e;
+  color: white;
+}
+
+.borderbottomright{
+  border-bottom-right-radius: 6px;
+}
+
+@media screen and (max-width: 500px){
+  #tn{
+      display: none;
+  }
+
+  /* #teams td, #teams th {
+    padding-left: 2px;
+    padding-right: 2px;
+  } */
+
+  #clteam{
+    background-color: #80aa3b;
+    color: white;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+  }
+  
+  #clplayoff{
+    background-color: #5f891a;
+    color: white;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+  }
+  
+  #elteams{
+    background-color: #bd910a;
+    color: white;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+  }
+  
+  #middleteams{
+    background-color: #eeeeee;
+    color: black;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+  }
+  
+  #downteams{
+    background-color: #a6322e;
+    color: white;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+  }
+ 
+  #teams {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    border-radius: 6px;
+   /*  width: 90%; */ /* Con pantalla pequeña no tocar bordes */
+  }
+}
+
+#teamsnames{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.line-color-a {
+  background-color: #eeeeee;
+}
+
+.line-color-b {
+  background-color: #d8d8d8;
+}
+
+#teams th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #e0e0e0;
+}
+
+.tableinfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.colordiv{
+  width: 15px;
+  height: 15px;
+}
