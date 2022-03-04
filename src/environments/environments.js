@@ -3,6 +3,6 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-    //baseUrl: 'http_//localhost:3000/rzaraguaza',
+    //baseUrl: 'http://localhost:8080/rzaraguaza',
     baseUrl: 'https://rzaraguaza-server.herokuapp.com/rzaraguaza',
 }

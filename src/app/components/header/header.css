@@ -1,7 +1,8 @@
 /* header */
 .header-section {
-	background-color: #0040f0;
-	background: linear-gradient(to left, #394ca1, #323e99);
+	background-color: #0164b7;
+	/* background: linear-gradient(to left, #394ca1, #323e99); */
+	background: linear-gradient(to right,#0a4ca8,#0164b7)!important;
 	max-width: 100vw;
 	min-height: 96px;
 /* 	background: url('./assets/header-lineas.png') top right no-repeat #323e99;
@@ -40,6 +41,11 @@
 	text-decoration: none;
 	margin-top: -12px;
 	line-height: normal;
+}
+
+.logo-copa {
+	display: flex;
+	margin-top: -12px;
 }
 
 .logo img {
@@ -165,6 +171,16 @@
 	  font-size: 1.25em;
 	  text-decoration: none;
 	  margin-top: 15px;
+	  line-height: normal;
+	}
+
+	.logo-copa {
+	  display: block;
+	  float: left;
+	  font-size: 1.25em;
+	  text-decoration: none;
+	  margin-top: 8px;
+	  margin-left: 25px;
 	  line-height: normal;
 	}
 

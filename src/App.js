@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Header from './app/components/header/header';
-/* import Classification from './app/components/classification/classification.component'; */
+import Classification from './app/components/classification/classification.component';
 import Players from './app/components/jugadores/jugadores.component';
 
 function App() {
@@ -13,9 +13,9 @@ function App() {
           <Route exact path="/">
 
           </Route>
-         {/*  <Route exact path="/classification">
+          <Route exact path="/classification">
             <Classification />
-          </Route> */}
+          </Route>
           <Route exact path="/players">
             <Players />
           </Route>

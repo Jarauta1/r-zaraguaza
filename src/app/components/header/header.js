@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./header.css";
 import logo from "../../../assets/Graphic1.png"
+import copas_header from "../../../assets/copas_header.png"
 
 function Header(props) {
 
@@ -11,6 +12,7 @@ function Header(props) {
                     <Link to="/" className="logo">
                         <img src={logo} height="30" alt="RZaraguaza" />
                     </Link>
+                    <img src={copas_header} height="30" alt="Titulos"/>
                     <input className="menu-header-btn" type="checkbox" id="menu-header-btn" />
                     <label className="menu-header-icon" htmlFor="menu-header-btn">
                         <span className="navicon"></span>
@@ -36,6 +38,7 @@ function Header(props) {
                     <Link to="/" className="logo">
                         <img src={logo} height="30" alt="RZaraguaza" />
                     </Link>
+                    <img className="logo-copa" src={copas_header} height="75px" alt="Titulos"/>
                     <input className="menu-header-btn" type="checkbox" id="menu-header-btn" />
                     <label className="menu-header-icon" htmlFor="menu-header-btn">
                         <span className="navicon"></span>
