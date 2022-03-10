@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./classification.component.css";
 import defaultShield from "../../../assets/default.png"
-import classificationService from "../../core/services/classification.service";
+import teamService from "../../core/services/team.service";
 
 function Classification(props) {
 
@@ -12,7 +12,7 @@ function Classification(props) {
     }, [])
 
     function getTeams() {
-        classificationService.getTeams().then((data) => {
+        teamService.getTeams().then((data) => {
             setTeams(data.sort((teamA, teamB) => {
                 if (teamA.puntos == teamB.puntos) {
                     return teamA.dg - teamB.dg;
