@@ -1,7 +1,7 @@
 import { environment } from "../../../environments/environments";
 import { CONSTANTS } from "../utils/constants";
 
-class ClassificationService {
+class TeamService {
 
   getTeams() {
     return fetch(environment.baseUrl + CONSTANTS.GET_TEAMS, {
@@ -17,4 +17,4 @@ class ClassificationService {
   
 }
 
-export default new ClassificationService();
+export default new TeamService();

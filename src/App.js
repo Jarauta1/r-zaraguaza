@@ -3,6 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Header from './app/components/header/header';
 import Classification from './app/components/classification/classification.component';
 import Players from './app/components/jugadores/jugadores.component';
+import Config from './app/components/admin-configuration/configuration';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Header/>
         <div className='screen'>
           <Route exact path="/">
-
+            <Config />
           </Route>
           <Route exact path="/classification">
             <Classification />
