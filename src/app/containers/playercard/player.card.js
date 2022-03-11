@@ -1,23 +1,17 @@
-import { useEffect, useState } from "react";
-import principal from "../../../assets/principal.jpg"
-import secundaria from "../../../assets/secundaria.jpg"
+import { useState } from "react";
 import "./player.card.css";
 
 function Card(props) {
 
     const [player, setPlayer] = useState(props.jugador)
 
-    useEffect(function () {
-        console.log(player)
-    }, [])
-
     return (<div className="payer-card">
         <div className="photo">
             <div className="photo-player">
-                <img src={secundaria} height="400px" alt="" />
+                <img src={player.foto_jugador} height="400px" alt="" />
             </div>
             <div className="photo-shirt">
-                <img src={principal} height="400px" alt="" />
+                <img src={player.foto_portada} height="400px" alt="" />
             </div>
         </div>
         <div className="card-footer">
