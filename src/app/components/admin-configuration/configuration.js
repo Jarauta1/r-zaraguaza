@@ -1,4 +1,4 @@
-import "./team-data.configuration.css";
+import "./configuration.css";
 import { app } from "../../../environments/environments"
 import { useEffect, useState } from "react";
 import { Container, TextField, Button, FormControl, InputLabel, Select, MenuItem } from "@material-ui/core";
@@ -79,7 +79,7 @@ function Config(props) {
 
                     <br />
                     <p>{fileURL}</p>
-                    <img src={fileURL} />
+                    <img src={fileURL} alt=""/>
                 </div>
             </div>
         </Container>

@@ -19,13 +19,13 @@ function Header(props) {
                     </label>
                     <ul className="menu-header">
                         <li>
-                            <Link className="header-users" to="/users"><a>Jugadores</a></Link>
+                            <Link className="header-users" to="/users">Jugadores</Link>
                         </li>
                         <li>
-                            <Link className="header-logout" to="/logout"><a>Partidos</a></Link>
+                            <Link className="header-logout" to="/logout">Partidos</Link>
                         </li>
                         <li>
-                            <Link className="header-logout" to="/logout"><a>Clasificación</a></Link>
+                            <Link className="header-logout" to="/logout">Clasificación</Link>
                         </li>
                     </ul>
                 </div>
@@ -45,22 +45,22 @@ function Header(props) {
                     </label>
                     <ul className="menu-header">
                         <li>
-                            <Link className="header-login" to={{ pathname: "/players" }}><a>Plantilla</a></Link>
+                            <Link className="header-login" to={{ pathname: "/players" }}>Plantilla</Link>
                         </li>
                         <li>
-                            <Link className="header-signup" to={{ pathname: "signUp" }}><a>Resultados</a></Link>
+                            <Link className="header-signup" to={{ pathname: "signUp" }}>Resultados</Link>
                         </li>
                         <li>
-                            <Link className="header-signup" to={{ pathname: "classification" }}><a>Clasificación</a></Link>
+                            <Link className="header-signup" to={{ pathname: "classification" }}>Clasificación</Link>
                         </li>
                         <li>
-                            <Link className="header-signup" to={{ pathname: "signUp" }}><a>Estadisticas</a></Link>
+                            <Link className="header-signup" to={{ pathname: "signUp" }}>Estadisticas</Link>
                         </li>
                         <li>
-                            <Link className="header-signup" to={{ pathname: "signUp" }}><a>Historico</a></Link>
+                            <Link className="header-signup" to={{ pathname: "signUp" }}>Historico</Link>
                         </li>
                         <li>
-                            <Link className="header-signup" to={{ pathname: "signUp" }}><a>Jugadores del mes</a></Link>
+                            <Link className="header-signup" to={{ pathname: "signUp" }}>Jugadores del mes</Link>
                         </li>
                     </ul>
                 </div>

@@ -14,7 +14,7 @@ function Classification(props) {
     function getTeams() {
         teamService.getTeams().then((data) => {
             setTeams(data.sort((teamA, teamB) => {
-                if (teamA.puntos == teamB.puntos) {
+                if (teamA.puntos === teamB.puntos) {
                     return teamA.dg - teamB.dg;
                 }
                 return teamB.puntos - teamA.puntos;
@@ -29,7 +29,7 @@ function Classification(props) {
     let borderbottomright = "";
     const showTeams = teams.map(team => {
         position += 1;
-        position % 2 == 0 ? lineColor = "line-color-b" : lineColor = "line-color-a";
+        position % 2 === 0 ? lineColor = "line-color-b" : lineColor = "line-color-a";
         switch (position) {
             case 1:
                 positionClass = "clteam";
@@ -59,7 +59,7 @@ function Classification(props) {
             <tr className={lineColor}>
                 <td id={positionClass} className={borderbottomleft}>{position}</td>
                 <td id="teamsnames">
-                    <img src={team.escudo || defaultShield} width="25px" height="25px" />
+                    <img src={team.escudo || defaultShield} width="25px" height="25px" alt={team.nombre_equipo} />
                     <span>&nbsp;&nbsp;{team.nombre_equipo}</span>
                 </td>
                 <td>{team.pj}</td>
@@ -76,7 +76,7 @@ function Classification(props) {
 
     return (<>
         <div id="content">
-            <table className="league-table" id="teams" border="0" cellspacing="0" cellpadding="0">
+            <table className="league-table" id="teams" border="0" cellSpacing="0" cellPadding="0">
                 <thead>
                     <tr>
                         <th className="borederleft">#</th>
@@ -97,23 +97,23 @@ function Classification(props) {
             </table>
             <br></br>
             <span>
-                <div class="tableinfo">
-                    <div id="clteam" class="colordiv"></div>
+                <div className="tableinfo">
+                    <div id="clteam" className="colordiv"></div>
                     &nbsp;
                     <p>Campeón</p>
                 </div>
-                <div class="tableinfo">
-                    <div id="clplayoff" class="colordiv"></div>
+                <div className="tableinfo">
+                    <div id="clplayoff" className="colordiv"></div>
                     &nbsp;
                     <p>Ascenso directo</p>
                 </div>
-                <div class="tableinfo">
-                    <div id="elteams" class="colordiv"></div>
+                <div className="tableinfo">
+                    <div id="elteams" className="colordiv"></div>
                     &nbsp;
                     <p>Play-off ascenso</p>
                 </div>
-                <div class="tableinfo">
-                    <div id="downteams" class="colordiv"></div>
+                <div className="tableinfo">
+                    <div id="downteams" className="colordiv"></div>
                     &nbsp;
                     <p>Descenso</p>
                 </div>
