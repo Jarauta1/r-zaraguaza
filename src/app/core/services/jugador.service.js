@@ -4,7 +4,6 @@ import { CONSTANTS } from "../utils/constants";
 class JugadorService {
 
   getJugadores() {
-    console.log('todos')
     return fetch(environment.baseUrl + CONSTANTS.GET_JUGADORES, {
       method: "GET",
       headers: {
@@ -16,7 +15,6 @@ class JugadorService {
   }
 
   getJugadorById(id) {
-    console.log('uno')
     return fetch(environment.baseUrl + CONSTANTS.GET_JUGADOR_ID.replace(':id', id), {
       method: "GET",
       headers: {
@@ -28,7 +26,6 @@ class JugadorService {
   }
 
   createJugador(jugador) {
-    console.log('crear')
     return fetch(environment.baseUrl + CONSTANTS.CREATE_JUGADOR, {
       method: "POST",
       headers: {
@@ -41,7 +38,6 @@ class JugadorService {
   }
 
   updateJugador(jugador,id) {
-    console.log('actualizar')
     return fetch(environment.baseUrl + CONSTANTS.UPDATE_JUGADOR.replace(':id', id), {
       method: "PUT",
       headers: {
@@ -54,7 +50,6 @@ class JugadorService {
   }
 
   deleteJugador(id) {
-    console.log('borrar')
     return fetch(environment.baseUrl + CONSTANTS.DELETE_JUGADOR.replace(':id', id), {
       method: "DELETE",
       headers: {

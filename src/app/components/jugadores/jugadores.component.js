@@ -18,7 +18,7 @@ function Players(props) {
     }
 
     const showPlayers = players.map( player => {
-        return <Card jugador={player}/>
+        return <Card jugador={player} key={player.jugador_id}/>
     })
 
     return(<div className="screen">

@@ -33,7 +33,7 @@ function Config(props) {
         console.log(fileURL);
     }
 
-    const showTeams = teams.map(team => <MenuItem value={team.equipo_id}>{team.nombre_equipo}</MenuItem>)
+    const showTeams = teams.map(team => <MenuItem value={team.equipo_id} key={team.equipo_id}>{team.nombre_equipo}</MenuItem>)
 
     return (<>
         <Container>

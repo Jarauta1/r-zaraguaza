@@ -55,8 +55,8 @@ function Classification(props) {
                 break;
         }
 
-        return (<>
-            <tr className={lineColor}>
+        return (
+           <tr className={lineColor} key={team.equipo_id}>
                 <td id={positionClass} className={borderbottomleft}>{position}</td>
                 <td id="teamsnames">
                     <img src={team.escudo || defaultShield} width="25px" height="25px" alt={team.nombre_equipo} />
@@ -71,7 +71,7 @@ function Classification(props) {
                 <td className="hide-small">{team.gf - team.gc}</td>
                 <td className={borderbottomright}><strong>{team.puntos}</strong></td>
             </tr>
-        </>)
+        )
     })
 
     return (<>
