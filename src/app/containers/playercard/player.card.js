@@ -3,7 +3,7 @@ import "./player.card.css";
 
 function Card(props) {
 
-    const [player, setPlayer] = useState(props.jugador)
+    const [player] = useState(props.jugador);
 
     return (<div className="payer-card">
         <div className="photo">
